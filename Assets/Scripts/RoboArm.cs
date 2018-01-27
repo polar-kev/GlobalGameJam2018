@@ -35,7 +35,11 @@ public class RoboArm : MonoBehaviour {
 
 		//For testing
 		//x-direction is forward
-		rgbd.MovePosition (Vector3.right * thrust);
+		rgbd.MovePosition (rgbd.position+Vector3.right * thrust);
+	}
+
+	IEnumerator RetractArm(){
+		
 	}
 		
 
