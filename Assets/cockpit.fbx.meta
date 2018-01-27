@@ -22,6 +22,16 @@ ModelImporter:
     100028: console1
     100030: window_frame1
     100032: window_glass3
+    100034: HoloRingB
+    100036: HoloRingB 1
+    100038: holoRingS
+    100040: holoRingS 1
+    100042: HoloSphere
+    100044: HoloSphere 1
+    100046: HoloStand_L
+    100048: HoloStandR
+    100050: pSphere1
+    100052: pSphere1 1
     400000: chair
     400002: chair 1
     400004: cockbit_Base
@@ -39,6 +49,16 @@ ModelImporter:
     400028: console1
     400030: window_frame1
     400032: window_glass3
+    400034: HoloRingB
+    400036: HoloRingB 1
+    400038: holoRingS
+    400040: holoRingS 1
+    400042: HoloSphere
+    400044: HoloSphere 1
+    400046: HoloStand_L
+    400048: HoloStandR
+    400050: pSphere1
+    400052: pSphere1 1
     2100000: lambert1
     2300000: chair
     2300002: chair 1
@@ -54,6 +74,16 @@ ModelImporter:
     2300022: console1
     2300024: window_frame1
     2300026: window_glass3
+    2300028: HoloRingB
+    2300030: HoloRingB 1
+    2300032: holoRingS
+    2300034: holoRingS 1
+    2300036: HoloSphere
+    2300038: HoloSphere 1
+    2300040: HoloStand_L
+    2300042: HoloStandR
+    2300044: pSphere1
+    2300046: pSphere1 1
     3300000: chair
     3300002: chair 1
     3300004: cockbit_Base
@@ -68,6 +98,16 @@ ModelImporter:
     3300022: console1
     3300024: window_frame1
     3300026: window_glass3
+    3300028: HoloRingB
+    3300030: HoloRingB 1
+    3300032: holoRingS
+    3300034: holoRingS 1
+    3300036: HoloSphere
+    3300038: HoloSphere 1
+    3300040: HoloStand_L
+    3300042: HoloStandR
+    3300044: pSphere1
+    3300046: pSphere1 1
     4300000: cockbit_Base
     4300002: window_glass
     4300004: chair
@@ -82,6 +122,16 @@ ModelImporter:
     4300022: window_glass3
     4300024: window_frame1
     4300026: console1
+    4300028: HoloStand_L
+    4300030: HoloRingB
+    4300032: holoRingS
+    4300034: HoloSphere
+    4300036: pSphere1
+    4300038: HoloStandR
+    4300040: HoloRingB
+    4300042: holoRingS
+    4300044: HoloSphere
+    4300046: pSphere1
     9500000: //RootNode
   externalObjects: {}
   materials:
