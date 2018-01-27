@@ -39,7 +39,8 @@ public class RoboArm : MonoBehaviour {
 	}
 
 	IEnumerator RetractArm(){
-		
+		yield return new WaitForSeconds(2);
+		rgbd.MovePosition (armSpawn);
 	}
 		
 

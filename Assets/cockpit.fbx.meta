@@ -18,6 +18,10 @@ ModelImporter:
     100020: window_frame 1
     100022: window_glass
     100024: window_glass 1
+    100026: cockbit_Base1
+    100028: console1
+    100030: window_frame1
+    100032: window_glass3
     400000: chair
     400002: chair 1
     400004: cockbit_Base
@@ -31,6 +35,10 @@ ModelImporter:
     400020: window_frame 1
     400022: window_glass
     400024: window_glass 1
+    400026: cockbit_Base1
+    400028: console1
+    400030: window_frame1
+    400032: window_glass3
     2100000: lambert1
     2300000: chair
     2300002: chair 1
@@ -42,6 +50,10 @@ ModelImporter:
     2300014: window_frame 1
     2300016: window_glass
     2300018: window_glass 1
+    2300020: cockbit_Base1
+    2300022: console1
+    2300024: window_frame1
+    2300026: window_glass3
     3300000: chair
     3300002: chair 1
     3300004: cockbit_Base
@@ -52,6 +64,10 @@ ModelImporter:
     3300014: window_frame 1
     3300016: window_glass
     3300018: window_glass 1
+    3300020: cockbit_Base1
+    3300022: console1
+    3300024: window_frame1
+    3300026: window_glass3
     4300000: cockbit_Base
     4300002: window_glass
     4300004: chair
@@ -62,6 +78,10 @@ ModelImporter:
     4300014: chair
     4300016: console
     4300018: window_frame
+    4300020: cockbit_Base1
+    4300022: window_glass3
+    4300024: window_frame1
+    4300026: console1
     9500000: //RootNode
   externalObjects: {}
   materials:
