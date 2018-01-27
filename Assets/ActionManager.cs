@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ActionManager : MonoBehaviour {
 
-	public bool actionCube1;
-	public bool actionCube2;
+	public bool actionCubeLeft;
+    public bool actionCubeRight;
 	public Material myMaterial;
 
 	private float elapsedTime;
@@ -14,8 +14,8 @@ public class ActionManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		actionCube1 = false;
-		actionCube2 = false;
+        actionCubeLeft = false;
+        actionCubeRight = false;
 
 		cube1Timer = 0;
 		cube2Timer = 0;
@@ -27,12 +27,13 @@ public class ActionManager : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		if(other.CompareTag("ActionCube1")){
-			actionCube1 = true;
+		if(other.gameObject.CompareTag("ActionCubeLeft")){
+            actionCubeLeft = true;
 		}
-		if(other.CompareTag("ActionCube2")){
-			actionCube2 = true;
+		if(other.gameObject.CompareTag("ActionCubeRight")){
+            actionCubeRight = true;
 		}
 		other.GetComponent<MeshRenderer> ().material = myMaterial;
+        print("Collision");
 	}
 }
