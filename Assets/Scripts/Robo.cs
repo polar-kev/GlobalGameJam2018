@@ -8,8 +8,9 @@ public class Robo : MonoBehaviour {
 	public Transform rightArmSpawn;
 	public Transform rightHandTarget;
 
-	public float delay = 2f;
-    public float thrust = 100f;
+	public float cooldown = 3f;
+   	public static float thrust = 100f;
+	public float armThrust = 100f;
 	public string shootRightArm;
 
 	private float elapsedTime;
@@ -18,6 +19,7 @@ public class Robo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		armThrust = thrust;
 		shotArm = false;
 		startPos = gameObject.transform;
 	}
@@ -25,18 +27,19 @@ public class Robo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		elapsedTime += Time.deltaTime;
-		if((Input.GetButton(shootRightArm) || Input.GetButton ("Fire1")) && !shotArm){
+		if(!shotArm && (Input.GetButton(shootRightArm) || Input.GetButton ("Fire1"))){
 			ShootArm ();
+			shotArm = true;
+			elapsedTime = 0;
 		}
-		if(shotArm && elapsedTime >= delay){
+		if(shotArm && elapsedTime >= cooldown){
 			print ("Cooldown Complete");
 			shotArm = false;
 		}
 	}
 
 	void ShootArm(){
-        GameObject newArm = GameObject.Instantiate(robotArm);
+		GameObject newArm = Instantiate(robotArm, rightArmSpawn.position, Quaternion.identity);
         newArm.GetComponent<Rigidbody>().AddRelativeForce(Vector3.right * thrust);
-		shotArm = true;
 	}
 }

@@ -146,10 +146,12 @@ GameObject:
   - component: {fileID: 4022311120942742}
   - component: {fileID: 95285117520382212}
   - component: {fileID: 114349946810444520}
+  - component: {fileID: 54445823755738164}
+  - component: {fileID: 114629633835788408}
   m_Layer: 0
   m_Name: LeftArm
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -981,15 +983,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1099911870973644}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.9999416, z: -0, w: 0.010816775}
+  m_LocalPosition: {x: 0.42397767, y: 0.019530961, z: -3.4}
+  m_LocalScale: {x: 0.48827425, y: 0.48827404, z: -0.4882748}
   m_Children:
   - {fileID: 4100002036962416}
   - {fileID: 4540862013645946}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 178.76001, z: 0}
 --- !u!4 &4046470417178822
 Transform:
   m_ObjectHideFlags: 1
@@ -1746,6 +1748,21 @@ Transform:
   m_Father: {fileID: 4100002036962416}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54445823755738164
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1099911870973644}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &95285117520382212
 Animator:
   serializedVersion: 3
@@ -1776,13 +1793,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixTransforms: 1
   solver:
-    IKPosition: {x: -16.9983, y: -0.2751101, z: -3.5439098}
+    IKPosition: {x: 17.071014, y: -0.27511007, z: -10.448678}
     IKPositionWeight: 1
     root: {fileID: 4022311120942742}
     target: {fileID: 0}
     IKRotationWeight: 1
-    IKRotation: {x: 0.24379088, y: -0, z: -0, w: 0.96982783}
-    bendNormal: {x: -0.0472881, y: 6.10806, z: 2.1130702}
+    IKRotation: {x: -0.0026370313, y: 0.9697712, z: 0.24377663, w: 0.01049041}
+    bendNormal: {x: -0.0015663438, y: -6.108071, z: -2.1136022}
     bone1:
       transform: {fileID: 4640890767155672}
       weight: 1
@@ -1818,6 +1835,19 @@ MonoBehaviour:
     maintainRotationWeight: 0
     bendModifierWeight: 1
     bendGoal: {fileID: 0}
+--- !u!114 &114629633835788408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1099911870973644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df843d7ea8254d87940ae120def734b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handAnimator: {fileID: 95285117520382212}
+  gripAccess: rightGrip
 --- !u!137 &137048784406123344
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
