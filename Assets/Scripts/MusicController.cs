@@ -6,6 +6,7 @@ public class MusicController : MonoBehaviour {
 
 	static MusicController instance = null;
 
+
 	void Start ()
 	{
 		//Singleton pattern- if music is already playing, destroy the new music player

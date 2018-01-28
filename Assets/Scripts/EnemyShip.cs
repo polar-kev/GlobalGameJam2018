@@ -15,6 +15,8 @@ public class EnemyShip : MonoBehaviour {
 	public GameObject explosion;
 	public GameObject[] junk;
 
+	public AudioSource audioSource;
+
 	private float elapsedTime;
 	private  GameController gameController;
 	private Vector3 randomPos;
@@ -48,6 +50,8 @@ public class EnemyShip : MonoBehaviour {
 		if(other.CompareTag("Player")){
 			Instantiate (explosion, new Vector3 (gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
 			Destroy (gameObject);
+
+			audioSource.Play ();
 
 			//create junk
 			for(int i=0;i<=Random.Range(1,junk.Length);i++){
