@@ -282,9 +282,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="GlobalGameJam2018.Plugins.csproj">
+      <Project>{1EA68B83-A1AF-A8EB-61F4-987003D6499F}</Project>
+      <Name>GlobalGameJam2018.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="GlobalGameJam2018.csproj">
       <Project>{83964CE9-83BC-79DE-8702-F45E164B47C2}</Project>
       <Name>GlobalGameJam2018</Name>
+    </ProjectReference>
+    <ProjectReference Include="GlobalGameJam2018.Editor.Plugins.csproj">
+      <Project>{F3D8DD87-AC42-DF18-3A3E-BAAE50611420}</Project>
+      <Name>GlobalGameJam2018.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

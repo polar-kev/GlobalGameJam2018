@@ -8,8 +8,8 @@ public class Robo : MonoBehaviour {
 	public Transform rightArmSpawn;
 	public Transform rightHandTarget;
 
-	public float thrust = 100f;
 	public float delay = 2f;
+    public float thrust = 100f;
 	public string shootRightArm;
 
 	private float elapsedTime;
@@ -29,16 +29,14 @@ public class Robo : MonoBehaviour {
 			ShootArm ();
 		}
 		if(shotArm && elapsedTime >= delay){
-			robotArm.GetComponent<Rigidbody> ().velocity = Vector3.zero;
-			robotArm.GetComponent<Rigidbody> ().MovePosition (rightArmSpawn.position);
-			print ("Reset");
+			print ("Cooldown Complete");
 			shotArm = false;
 		}
 	}
 
 	void ShootArm(){
-		elapsedTime = 0;
-		robotArm.GetComponent<Rigidbody> ().AddForce (Vector3.right * thrust);
+        GameObject newArm = GameObject.Instantiate(robotArm);
+        newArm.GetComponent<Rigidbody>().AddRelativeForce(Vector3.right * thrust);
 		shotArm = true;
 	}
 }

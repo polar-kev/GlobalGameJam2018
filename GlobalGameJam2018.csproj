@@ -282,8 +282,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ActionManager.cs" />
-    <Compile Include="Assets\Scripts\RoboArm.cs" />
+    <ProjectReference Include="GlobalGameJam2018.Plugins.csproj">
+      <Project>{1EA68B83-A1AF-A8EB-61F4-987003D6499F}</Project>
+      <Name>GlobalGameJam2018.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\projectileArm.cs" />
+    <Compile Include="Assets\prototype\ClosestZone.cs" />
+    <Compile Include="Assets\Scripts\ActionManager.cs" />
+    <Compile Include="Assets\Scripts\HandGrip.cs" />
+    <Compile Include="Assets\Scripts\Robo.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
