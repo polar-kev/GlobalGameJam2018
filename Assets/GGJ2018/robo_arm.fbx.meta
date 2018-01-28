@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: b72333feddd5aee4b9edf5905cccf799
+timeCreated: 1517094664
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: arm_fin_bot
+    100002: arm_fin_bot_booster
+    100004: arm_fin_top
+    100006: arm_fin_top_booster
+    100008: bicep
+    100010: bicep_twist
+    100012: code_forearmtwistff
+    100014: code_wrist
+    100016: elbow_bend
+    100018: elbow_joint_B
+    100020: elbow_jointA
+    100022: elbow_twist
+    100024: fin_bottom
+    100026: fin_top
+    100028: finger_mid_1
+    100030: finger_mid_1 1
+    100032: finger_mid_2
+    100034: finger_mid_2 1
+    100036: finger_mid_3
+    100038: finger_mid_3 1
+    100040: finger_mid_4
+    100042: finger_pinky_1
+    100044: finger_pinky_1 1
+    100046: finger_pinky_2
+    100048: finger_pinky_2 1
+    100050: finger_pinky_3
+    100052: finger_pinky_3 1
+    100054: finger_pinky_4
+    100056: finger_point_1
+    100058: finger_point_1 1
+    100060: finger_point_2
+    100062: finger_point_2 1
+    100064: finger_point_3
+    100066: finger_point_3 1
+    100068: finger_point_4
+    100070: finger_ring_1
+    100072: finger_ring_1 1
+    100074: finger_ring_2
+    100076: finger_ring_2 1
+    100078: finger_ring_3
+    100080: finger_ring_3 1
+    100082: finger_ring_4
+    100084: forearm
+    100086: forearm 1
+    100088: forearm_twist
+    100090: palm1
+    100092: PunchArm_mesh
+    100094: //RootNode
+    100096: ROOT
+    100098: shoulder
+    100100: thumb
+    100102: thumb1
+    100104: thumb2
+    100106: thumb2 1
+    100108: thumb3
+    100110: thumb3 1
+    100112: thumb4
+    100114: wrist
+    100116: wristgaurd1
+    400000: arm_fin_bot
+    400002: arm_fin_bot_booster
+    400004: arm_fin_top
+    400006: arm_fin_top_booster
+    400008: bicep
+    400010: bicep_twist
+    400012: code_forearmtwistff
+    400014: code_wrist
+    400016: elbow_bend
+    400018: elbow_joint_B
+    400020: elbow_jointA
+    400022: elbow_twist
+    400024: fin_bottom
+    400026: fin_top
+    400028: finger_mid_1
+    400030: finger_mid_1 1
+    400032: finger_mid_2
+    400034: finger_mid_2 1
+    400036: finger_mid_3
+    400038: finger_mid_3 1
+    400040: finger_mid_4
+    400042: finger_pinky_1
+    400044: finger_pinky_1 1
+    400046: finger_pinky_2
+    400048: finger_pinky_2 1
+    400050: finger_pinky_3
+    400052: finger_pinky_3 1
+    400054: finger_pinky_4
+    400056: finger_point_1
+    400058: finger_point_1 1
+    400060: finger_point_2
+    400062: finger_point_2 1
+    400064: finger_point_3
+    400066: finger_point_3 1
+    400068: finger_point_4
+    400070: finger_ring_1
+    400072: finger_ring_1 1
+    400074: finger_ring_2
+    400076: finger_ring_2 1
+    400078: finger_ring_3
+    400080: finger_ring_3 1
+    400082: finger_ring_4
+    400084: forearm
+    400086: forearm 1
+    400088: forearm_twist
+    400090: palm1
+    400092: PunchArm_mesh
+    400094: //RootNode
+    400096: ROOT
+    400098: shoulder
+    400100: thumb
+    400102: thumb1
+    400104: thumb2
+    400106: thumb2 1
+    400108: thumb3
+    400110: thumb3 1
+    400112: thumb4
+    400114: wrist
+    400116: wristgaurd1
+    2100000: lambert1
+    4300000: elbow_bend
+    4300002: palm1
+    4300004: finger_mid_1
+    4300006: finger_pinky_1
+    4300008: finger_point_1
+    4300010: finger_ring_1
+    4300012: thumb2
+    4300014: thumb3
+    4300016: elbow_twist
+    4300018: finger_ring_3
+    4300020: finger_ring_2
+    4300022: finger_point_3
+    4300024: finger_point_2
+    4300026: finger_pinky_3
+    4300028: finger_pinky_2
+    4300030: finger_mid_3
+    4300032: finger_mid_2
+    4300034: wristgaurd1
+    4300036: fin_bottom
+    4300038: fin_top
+    4300040: forearm
+    4300042: bicep
+    4300044: thumb1
+    9500000: //RootNode
+    13700000: bicep
+    13700002: elbow_bend
+    13700004: elbow_twist
+    13700006: fin_bottom
+    13700008: fin_top
+    13700010: finger_mid_1
+    13700012: finger_mid_2
+    13700014: finger_mid_3
+    13700016: finger_pinky_1
+    13700018: finger_pinky_2
+    13700020: finger_pinky_3
+    13700022: finger_point_1
+    13700024: finger_point_2
+    13700026: finger_point_3
+    13700028: finger_ring_1
+    13700030: finger_ring_2
+    13700032: finger_ring_3
+    13700034: forearm
+    13700036: palm1
+    13700038: thumb1
+    13700040: thumb2
+    13700042: thumb3
+    13700044: wristgaurd1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BaseAvata
+  m_Mask: 00000000000000000000000000000000000000000000000001000000000000000100000000000000000000000000000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: PunchArm_mesh
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/bicep
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/elbow_bend
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/elbow_twist
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/fin_bottom
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/fin_top
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_mid_1
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_mid_2
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_mid_3
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_pinky_1
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_pinky_2
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_pinky_3
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_point_1
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_point_2
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_point_3
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_ring_1
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_ring_2
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/finger_ring_3
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/forearm
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/palm1
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/thumb1
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/thumb2
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/thumb3
+    m_Weight: 1
+  - m_Path: PunchArm_mesh/wristgaurd1
+    m_Weight: 1
+  - m_Path: ROOT
+    m_Weight: 1
+  - m_Path: ROOT/shoulder
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/arm_fin_bot
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/arm_fin_bot/arm_fin_bot_booster
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/arm_fin_top
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/arm_fin_top/arm_fin_top_booster
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_mid_1
+      1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_mid_1
+      1/finger_mid_2 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_mid_1
+      1/finger_mid_2 1/finger_mid_3 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_mid_1
+      1/finger_mid_2 1/finger_mid_3 1/finger_mid_4
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_pinky_1
+      1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_pinky_1
+      1/finger_pinky_2 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_pinky_1
+      1/finger_pinky_2 1/finger_pinky_3 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_pinky_1
+      1/finger_pinky_2 1/finger_pinky_3 1/finger_pinky_4
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_point_1
+      1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_point_1
+      1/finger_point_2 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_point_1
+      1/finger_point_2 1/finger_point_3 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_point_1
+      1/finger_point_2 1/finger_point_3 1/finger_point_4
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_ring_1
+      1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_ring_1
+      1/finger_ring_2 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_ring_1
+      1/finger_ring_2 1/finger_ring_3 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/finger_ring_1
+      1/finger_ring_2 1/finger_ring_3 1/finger_ring_4
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/thumb
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/thumb/thumb2
+      1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/thumb/thumb2
+      1/thumb3 1
+    m_Weight: 1
+  - m_Path: ROOT/shoulder/bicep_twist/elbow_jointA/elbow_joint_B/forearm 1/forearm_twist/code_forearmtwistff/wrist/code_wrist/thumb/thumb2
+      1/thumb3 1/thumb4
+    m_Weight: 1
