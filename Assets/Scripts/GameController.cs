@@ -4,16 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public struct EnemySpawn{
-	public const float xMin = 50f;
-	public const float xMax = 60f;
-	public const float yMin = 0f;
-	public const float yMax = 16f;
-	public const float zMin = 5f;
-	public const float zMax = 25f;
-}
-
 public class GameController : MonoBehaviour {
+
+	public static float EnemySpawn_xMin = 50f;
+	public static float EnemySpawn_xMax = 60f;
+	public static float EnemySpawn_yMin = 0f;
+	public static float EnemySpawn_yMax = 16f;
+	public static float EnemySpawn_zMin = 5f;
+	public static float EnemySpawn_zMax = 25f;
+
+
 
 	public GameObject[] enemyList;
 	public int enemySpawnCount = 7;
@@ -60,9 +60,9 @@ public class GameController : MonoBehaviour {
 			for (int i = 0; i <= enemySpawnCount; i++) {
 				int randomizer = Random.Range (0, enemyList.Length);
 				//Alternate enemy spawn points between left and right
-				Vector3 spawnPosition = new Vector3 (Random.Range (EnemySpawn.xMin, EnemySpawn.xMax), 
-					Random.Range (EnemySpawn.yMin, EnemySpawn.yMax), 
-					i % 2 == 0 ? Random.Range (EnemySpawn.zMin, EnemySpawn.zMax) : -1*Random.Range (EnemySpawn.zMin, EnemySpawn.zMax));
+				Vector3 spawnPosition = new Vector3 (Random.Range (EnemySpawn_xMin, EnemySpawn_xMax), 
+					Random.Range (EnemySpawn_yMin, EnemySpawn_yMax), 
+					i % 2 == 0 ? Random.Range (EnemySpawn_zMin, EnemySpawn_zMax) : -1*Random.Range (EnemySpawn_zMin, EnemySpawn_zMax));
 				Quaternion spawnRotation = Quaternion.identity;
 				 Instantiate (enemyList[randomizer], spawnPosition, spawnRotation);
 				yield return new WaitForSeconds (spawnWait);

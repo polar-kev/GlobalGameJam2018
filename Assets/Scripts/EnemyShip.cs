@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnemyShip : MonoBehaviour {
 
 	public float speedMin;
@@ -16,12 +17,20 @@ public class EnemyShip : MonoBehaviour {
 
 	private float elapsedTime;
 	private  GameController gameController;
+	private Vector3 randomPos;
+	private float target_x = -30f;
+
 
 	void Start() {
 		speed = Random.Range (speedMin,speedMax);
-		gameObject.GetComponent<Rigidbody> ().velocity = -transform.right*speed;
+		//Move enemies in a straight line
+		//gameObject.GetComponent<Rigidbody> ().velocity = -transform.right*speed;
 		gameController = GameObject.FindObjectOfType<GameController> ();
 
+		//generate random target
+		randomPos = new Vector3 (target_x, 
+			Random.Range(GameController.EnemySpawn_yMin,GameController.EnemySpawn_yMax), 
+			Random.Range(-GameController.EnemySpawn_zMax,GameController.EnemySpawn_zMax));
 	}
 
 	void Update(){
@@ -30,6 +39,9 @@ public class EnemyShip : MonoBehaviour {
 		if (Time.deltaTime >= delay) {
 			Destroy (gameObject);
 		}
+
+		//move enemy to target
+		gameObject.transform.position = Vector3.MoveTowards(transform.position, randomPos, speed*Time.deltaTime);
 	}
 
 	void OnTriggerEnter(Collider other){

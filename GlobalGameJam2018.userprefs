@@ -2,16 +2,16 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyShip.cs">
     <Files>
-      <File FileName="Assets/Scripts/RoboHandController.cs" Line="1" Column="26" />
+      <File FileName="Assets/Scripts/RoboHandController.cs" Line="95" Column="32" />
       <File FileName="Assets/SteamVR/Scripts/SteamVR_ControllerManager.cs" Line="1" Column="1" />
       <File FileName="Assets/SteamVR/Extras/SteamVR_TestThrow.cs" Line="1" Column="1" />
       <File FileName="Assets/prototype/ClosestZone.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/HandGrip.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Robo.cs" Line="21" Column="30" />
-      <File FileName="Assets/Scripts/ActionManager.cs" Line="16" Column="33" />
-      <File FileName="Assets/Scripts/MusicController.cs" Line="19" Column="3" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="65" Column="113" />
-      <File FileName="Assets/Scripts/EnemyShip.cs" Line="36" Column="22" />
+      <File FileName="Assets/Scripts/Robo.cs" Line="57" Column="3" />
+      <File FileName="Assets/Scripts/ActionManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MusicController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="9" Column="37" />
+      <File FileName="Assets/Scripts/EnemyShip.cs" Line="20" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
