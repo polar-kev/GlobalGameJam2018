@@ -293,6 +293,7 @@
     <Compile Include="Assets\Scripts\ActionManager.cs" />
     <Compile Include="Assets\Scripts\HandGrip.cs" />
     <Compile Include="Assets\Scripts\Robo.cs" />
+    <Compile Include="Assets\Scripts\RoboHandController.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
