@@ -12,14 +12,17 @@ public class Robo : MonoBehaviour {
    	public static float thrust = 100f;
 	public float armThrust = 100f;
 	public string shootRightArm;
+	public Transform sweetSpot;
 
 	private float elapsedTime;
 	private bool shotArm;
+	private GameObject cameraRig;
 
 	// Use this for initialization
 	void Start () {
 		armThrust = thrust;
 		shotArm = false;
+		cameraRig = GameObject.FindWithTag ("CameraRig");
 	}
 	
 	// Update is called once per frame
@@ -34,10 +37,18 @@ public class Robo : MonoBehaviour {
 			print ("Cooldown Complete");
 			shotArm = false;
 		}
+
+		if(Input.GetButton("Menu")){
+			print ("Menu Button Working");
+		}
 	}
 
 	void ShootArm(){
 		GameObject newArm = Instantiate(robotArm, rightArmSpawn.position, Quaternion.identity);
         newArm.GetComponent<Rigidbody>().AddRelativeForce(Vector3.right * thrust);
+	}
+
+	void ResetPosition(){
+		cameraRig.transform.position = sweetSpot.position;
 	}
 }
