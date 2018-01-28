@@ -21,15 +21,6 @@ public class RoboHandController : MonoBehaviour {
 
     public float zMod = 1f;
 
-
-    //x-direction modifiers
-    public float m_x = 935f;
-    public float b_x = -185f;
-
-    //y-direction modifiers
-    public float m_y = 1400f;
-    public float b_y = -1764f;
-
     public float time = 2f;
 
     public  float power = 1f;
@@ -44,8 +35,17 @@ public class RoboHandController : MonoBehaviour {
     public float Zmodifier = 1f;
     public float Zoffset = 1f;
 
+	private float chargeTimer = 0;
+	private float punchTimer = 0;
+	public float timeToPunch = 5f;
+	public float chargeReq = 7f;
+	public float punchWindow = 4f;
+	public float chargeOffset = 1f;
+	private bool charged;
+
     // Use this for initialization
     void Start () {
+		charged = false;
 	}
 	
 	// Update is called once per frame
@@ -60,23 +60,34 @@ public class RoboHandController : MonoBehaviour {
 		rhStartPos.position = new Vector3(Mathf.Clamp(rightController.position.x, fwdMin, fwdMax),
 			Mathf.Clamp(rightController.position.y,upMin,upMax),
 			rightController.position.z);
-            
-
-        /*
-		//Change robot arm IK target positions
-		LeftHandTarget.position = Mathf.Lerp(leftHandTarget.position, new Vector3 (lhStartPos.position.x* m_x + b_x, lhStartPos.position.y*m_y+b_y, lhStartPos.position.z*zMod),time);
-		RightHandTarget.position = new Vector3 (rhStartPos.position.x * m_x + b_x, rhStartPos.position.y * m_y + b_y, rhStartPos.position.z*zMod);
-        */
 
         //Change robot arm IK target positions
         leftHandTarget.position = new Vector3(modifier*Mathf.Pow(lhStartPos.position.x, power)+offset, Ymodifier * Mathf.Pow(lhStartPos.position.y, Ypower) + Yoffset, Zmodifier * Mathf.Pow(lhStartPos.position.z, Zpower) + Zoffset);
         rightHandTarget.position = new Vector3(modifier * Mathf.Pow(rhStartPos.position.x, power)+offset, Ymodifier * Mathf.Pow(rhStartPos.position.y, Ypower) + Yoffset, Zmodifier * Mathf.Pow(rhStartPos.position.z, Zpower) + Zoffset);
+    	
+		leftHandTarget.rotation = leftController.rotation;
+		rightHandTarget.rotation = rightController.rotation;
 
+		//Player brings both hands back to charge
+		if(!charged && (lhStartPos.position.x<= (fwdMin + chargeOffset)) && (rhStartPos.position.x <= (fwdMin + chargeOffset))){
+			chargeTimer += Time.deltaTime;
+			if(chargeTimer >= chargeReq){
+				charged = true;
+				print ("charged");
+			}
+		}
+		else{
+			chargeTimer = 0;
+		}
 
-        //print("Left:" + leftHandTarget.position);
-        //print("Right:" + rightHandTarget.position);
-        
-
-
-    }
+		//Player is charged up and must punch before losing charge
+		if(charged){
+			punchTimer += Time.deltaTime;
+			if ((punchTimer <= timeToPunch) && (lhStartPos.position.x == fwdMax) && (rhStartPos.position.x == fwdMax)) {
+				print ("punching");
+				//Move player
+			}
+			if(punchTimer >= timeToPunch){charged = false;}
+		}
+	}
 }

@@ -9,6 +9,7 @@ TagManager:
   - ActionCubeLeft
   - ActionCubeRight
   - Boundary
+  - CameraRig
   layers:
   - Default
   - TransparentFX
