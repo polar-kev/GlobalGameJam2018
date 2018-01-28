@@ -36,8 +36,16 @@ public class RoboHandController : MonoBehaviour {
     public float modifier = 1f;
     public float offset = 1f;
 
-	// Use this for initialization
-	void Start () {
+    public float Ypower = 1f;
+    public float Ymodifier = 1f;
+    public float Yoffset = 1f;
+
+    public float Zpower = 1f;
+    public float Zmodifier = 1f;
+    public float Zoffset = 1f;
+
+    // Use this for initialization
+    void Start () {
 	}
 	
 	// Update is called once per frame
@@ -61,8 +69,8 @@ public class RoboHandController : MonoBehaviour {
         */
 
         //Change robot arm IK target positions
-        leftHandTarget.position = new Vector3(modifier*Mathf.Pow(lhStartPos.position.x, power)+offset, lhStartPos.position.y, lhStartPos.position.z * zMod);
-        rightHandTarget.position = new Vector3(modifier * Mathf.Pow(rhStartPos.position.x, power)+offset, rhStartPos.position.y, rhStartPos.position.z * zMod);
+        leftHandTarget.position = new Vector3(modifier*Mathf.Pow(lhStartPos.position.x, power)+offset, Ymodifier * Mathf.Pow(lhStartPos.position.y, Ypower) + Yoffset, Zmodifier * Mathf.Pow(lhStartPos.position.z, Zpower) + Zoffset);
+        rightHandTarget.position = new Vector3(modifier * Mathf.Pow(rhStartPos.position.x, power)+offset, Ymodifier * Mathf.Pow(rhStartPos.position.y, Ypower) + Yoffset, Zmodifier * Mathf.Pow(rhStartPos.position.z, Zpower) + Zoffset);
 
 
         print("Left:" + leftHandTarget.position);
