@@ -8,6 +8,7 @@ TagManager:
   - CanGrab
   - ActionCubeLeft
   - ActionCubeRight
+  - Boundary
   layers:
   - Default
   - TransparentFX

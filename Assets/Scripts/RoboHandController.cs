@@ -73,8 +73,8 @@ public class RoboHandController : MonoBehaviour {
         rightHandTarget.position = new Vector3(modifier * Mathf.Pow(rhStartPos.position.x, power)+offset, Ymodifier * Mathf.Pow(rhStartPos.position.y, Ypower) + Yoffset, Zmodifier * Mathf.Pow(rhStartPos.position.z, Zpower) + Zoffset);
 
 
-        print("Left:" + leftHandTarget.position);
-        print("Right:" + rightHandTarget.position);
+        //print("Left:" + leftHandTarget.position);
+        //print("Right:" + rightHandTarget.position);
         
 
 

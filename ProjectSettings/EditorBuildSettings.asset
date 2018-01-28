@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SteamVR/Extras/SteamVR_TestTrackedCamera.unity
-    guid: 7fb811b0ffe615b4dbf1d5e6ced385fd
+    path: Assets/start.unity
+    guid: af1b2aaea868faa4a84b478f1833dd0f

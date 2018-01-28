@@ -15,13 +15,11 @@ public class Robo : MonoBehaviour {
 
 	private float elapsedTime;
 	private bool shotArm;
-	private Transform startPos;
 
 	// Use this for initialization
 	void Start () {
 		armThrust = thrust;
 		shotArm = false;
-		startPos = gameObject.transform;
 	}
 	
 	// Update is called once per frame

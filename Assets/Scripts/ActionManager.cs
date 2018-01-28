@@ -9,16 +9,11 @@ public class ActionManager : MonoBehaviour {
 	public Material myMaterial;
 
 	private float elapsedTime;
-	private float cube1Timer;
-	private float cube2Timer;
 
 	// Use this for initialization
 	void Start () {
         actionCubeLeft = false;
         actionCubeRight = false;
-
-		cube1Timer = 0;
-		cube2Timer = 0;
 	}
 	
 	// Update is called once per frame
@@ -34,6 +29,5 @@ public class ActionManager : MonoBehaviour {
             actionCubeRight = true;
 		}
 		other.GetComponent<MeshRenderer> ().material = myMaterial;
-        print("Collision");
 	}
 }
