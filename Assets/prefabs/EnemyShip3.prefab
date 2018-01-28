@@ -126,4 +126,14 @@ MonoBehaviour:
   speedMin: 10
   speedMax: 20
   delay: 20
+  target: {fileID: 4318748848430158, guid: 15a86156e52c743e6bec540ec79da13e, type: 2}
+  speed: 0
+  rotationSpeed: 2
   explosion: {fileID: 100008, guid: c3b79b8d57f104b16b68dc611c6e9753, type: 2}
+  junk:
+  - {fileID: 1737314358762774, guid: 24d7df68019054858a37b662cce85628, type: 2}
+  - {fileID: 1381523203855344, guid: 969fef7253cae4baeadb162f7a09dcc7, type: 2}
+  - {fileID: 1096126473296632, guid: 1e9334423f655455dbca6014f72f80b7, type: 2}
+  - {fileID: 1813549663816986, guid: 21486c7f5edf540f288949c8a77bb80b, type: 2}
+  - {fileID: 1392342164136174, guid: a696141913d8a4688b9e17618807a07b, type: 2}
+  - {fileID: 1966253653719122, guid: ccfb583266b66446bad97a79b391fd95, type: 2}

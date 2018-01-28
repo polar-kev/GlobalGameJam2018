@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1696235710383586}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 81.6, y: 0.5, z: 31.5}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -126,4 +126,14 @@ MonoBehaviour:
   speedMin: 10
   speedMax: 20
   delay: 20
+  target: {fileID: 4318748848430158, guid: 15a86156e52c743e6bec540ec79da13e, type: 2}
+  speed: 0
+  rotationSpeed: 2
   explosion: {fileID: 100008, guid: c3b79b8d57f104b16b68dc611c6e9753, type: 2}
+  junk:
+  - {fileID: 1737314358762774, guid: 24d7df68019054858a37b662cce85628, type: 2}
+  - {fileID: 1381523203855344, guid: 969fef7253cae4baeadb162f7a09dcc7, type: 2}
+  - {fileID: 1096126473296632, guid: 1e9334423f655455dbca6014f72f80b7, type: 2}
+  - {fileID: 1813549663816986, guid: 21486c7f5edf540f288949c8a77bb80b, type: 2}
+  - {fileID: 1392342164136174, guid: a696141913d8a4688b9e17618807a07b, type: 2}
+  - {fileID: 1966253653719122, guid: ccfb583266b66446bad97a79b391fd95, type: 2}

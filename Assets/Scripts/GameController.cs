@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 public struct EnemySpawn{
 	public const float xMin = 50f;
 	public const float xMax = 60f;
-	public const float yMin = -2f;
-	public const float yMax = -3f;
-	public const float zMin = -40f;
+	public const float yMin = 0f;
+	public const float yMax = 4f;
+	public const float zMin = 10f;
 	public const float zMax = 40f;
 }
 
@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour {
 	public int enemySpawnCount = 7;
 	public float spawnWait = 0.5f;
 	public float startWait = 3.0f;
-	public float waveWait = 2.0f;
+	public float waveWait = 1f;
 	//public Text scoreText;
 	//public Text gameOverText;
 	//public Text restartText;
@@ -51,8 +51,7 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
-	//Pause waveWait=time_in_seconds after every wave
-	//Spawn an enemy every spawnWait=time_in_seconds
+	//Spawn Enemy ships after a delay
 	IEnumerator SpawnWaves(){
 		//gameOverText.text = "READY?";
 		yield return new WaitForSeconds (startWait);
@@ -60,7 +59,10 @@ public class GameController : MonoBehaviour {
 		while (!gameOver) {	
 			for (int i = 0; i <= enemySpawnCount; i++) {
 				int randomizer = Random.Range (0, enemyList.Length);
-				Vector3 spawnPosition = new Vector3 (Random.Range (EnemySpawn.xMin, EnemySpawn.xMax), Random.Range (EnemySpawn.yMin, EnemySpawn.yMax), Random.Range (EnemySpawn.zMin, EnemySpawn.zMax));
+				//Alternate enemy spawn points between left and right
+				Vector3 spawnPosition = new Vector3 (Random.Range (EnemySpawn.xMin, EnemySpawn.xMax), 
+					Random.Range (EnemySpawn.yMin, EnemySpawn.yMax), 
+					i % 2 == 0 ? Random.Range (EnemySpawn.zMin, EnemySpawn.zMax) : -1*Random.Range (EnemySpawn.zMin, EnemySpawn.zMax));
 				Quaternion spawnRotation = Quaternion.identity;
 				 Instantiate (enemyList[randomizer], spawnPosition, spawnRotation);
 				yield return new WaitForSeconds (spawnWait);
@@ -76,6 +78,7 @@ public class GameController : MonoBehaviour {
 
 	public void addScoreValue(int newScoreValue){
 		score += newScoreValue;
+		print ("Score: " + score);
 		updateScore ();
 	}
 
