@@ -51,4 +51,10 @@ public class Robo : MonoBehaviour {
 	void ResetPosition(){
 		cameraRig.transform.position = sweetSpot.position;
 	}
+
+    void MoveRobo()
+    {
+
+    }
+
 }

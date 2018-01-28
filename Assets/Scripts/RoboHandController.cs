@@ -38,14 +38,16 @@ public class RoboHandController : MonoBehaviour {
 	private float chargeTimer = 0;
 	private float punchTimer = 0;
 	public float timeToPunch = 5f;
-	public float chargeReq = 7f;
+	public float chargeReq = 4f;
 	public float punchWindow = 4f;
 	public float chargeOffset = 1f;
 	private bool charged;
+    private bool punched;
 
     // Use this for initialization
     void Start () {
 		charged = false;
+        punched = false;
 	}
 	
 	// Update is called once per frame
@@ -65,11 +67,12 @@ public class RoboHandController : MonoBehaviour {
         leftHandTarget.position = new Vector3(modifier*Mathf.Pow(lhStartPos.position.x, power)+offset, Ymodifier * Mathf.Pow(lhStartPos.position.y, Ypower) + Yoffset, Zmodifier * Mathf.Pow(lhStartPos.position.z, Zpower) + Zoffset);
         rightHandTarget.position = new Vector3(modifier * Mathf.Pow(rhStartPos.position.x, power)+offset, Ymodifier * Mathf.Pow(rhStartPos.position.y, Ypower) + Yoffset, Zmodifier * Mathf.Pow(rhStartPos.position.z, Zpower) + Zoffset);
     	
+        //Add controller rotation
 		leftHandTarget.rotation = leftController.rotation;
 		rightHandTarget.rotation = rightController.rotation;
 
 		//Player brings both hands back to charge
-		if(!charged && (lhStartPos.position.x<= (fwdMin + chargeOffset)) && (rhStartPos.position.x <= (fwdMin + chargeOffset))){
+		if(!charged && (lhStartPos.position.x<= 0.87f && (rhStartPos.position.x <= 0.87f))){
 			chargeTimer += Time.deltaTime;
 			if(chargeTimer >= chargeReq){
 				charged = true;
@@ -82,12 +85,14 @@ public class RoboHandController : MonoBehaviour {
 
 		//Player is charged up and must punch before losing charge
 		if(charged){
-			punchTimer += Time.deltaTime;
-			if ((punchTimer <= timeToPunch) && (lhStartPos.position.x == fwdMax) && (rhStartPos.position.x == fwdMax)) {
+			if ((lhStartPos.position.x >= 1.2f) && (rhStartPos.position.x >= 1.2f)) {
 				print ("punching");
+                punched = true;
 				//Move player
 			}
-			if(punchTimer >= timeToPunch){charged = false;}
 		}
-	}
+
+        print("RH_x: " + lhStartPos.position.x);
+        print("LH_x: " + rhStartPos.position.x);
+    }
 }

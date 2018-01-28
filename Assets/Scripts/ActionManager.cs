@@ -24,10 +24,12 @@ public class ActionManager : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if(other.gameObject.CompareTag("ActionCubeLeft")){
             actionCubeLeft = true;
-		}
+            other.GetComponent<MeshRenderer>().material = myMaterial;
+        }
 		if(other.gameObject.CompareTag("ActionCubeRight")){
             actionCubeRight = true;
-		}
-		other.GetComponent<MeshRenderer> ().material = myMaterial;
+            other.GetComponent<MeshRenderer>().material = myMaterial;
+        }
+		
 	}
 }
