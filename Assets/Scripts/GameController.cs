@@ -8,9 +8,9 @@ public struct EnemySpawn{
 	public const float xMin = 50f;
 	public const float xMax = 60f;
 	public const float yMin = 0f;
-	public const float yMax = 4f;
-	public const float zMin = 10f;
-	public const float zMax = 40f;
+	public const float yMax = 16f;
+	public const float zMin = 5f;
+	public const float zMax = 25f;
 }
 
 public class GameController : MonoBehaviour {

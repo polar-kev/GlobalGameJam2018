@@ -288,12 +288,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\projectileArm.cs" />
     <Compile Include="Assets\prototype\ClosestZone.cs" />
     <Compile Include="Assets\Scripts\ActionManager.cs" />
+    <Compile Include="Assets\Scripts\DestroyOverTime.cs" />
+    <Compile Include="Assets\Scripts\EnemyShip.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\HandGrip.cs" />
+    <Compile Include="Assets\Scripts\MusicController.cs" />
+    <Compile Include="Assets\Scripts\projectileArm.cs" />
+    <Compile Include="Assets\Scripts\RandomRotator.cs" />
     <Compile Include="Assets\Scripts\Robo.cs" />
     <Compile Include="Assets\Scripts\RoboHandController.cs" />
+    <Compile Include="Assets\Scripts\VelocityRandomDirection.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
