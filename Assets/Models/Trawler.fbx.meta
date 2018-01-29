@@ -24,6 +24,7 @@ ModelImporter:
     400014: trawler_window
     400016: trwaler_claws
     2100000: lambert1
+    2100002: lambert2
     2300000: trawler_cargo
     2300002: trawler_hull
     2300004: trawler_jets

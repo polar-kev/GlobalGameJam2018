@@ -52,7 +52,7 @@ public class Robo : MonoBehaviour {
 		}
 
 		if(Input.GetButton("Fire2")){
-			MoveRobo ();
+			//MoveRobo ();
 		}
 
 		transform.Translate (new Vector3 (0,yvel*Time.deltaTime,0));
@@ -77,7 +77,7 @@ public class Robo : MonoBehaviour {
 		cameraRig.transform.position = sweetSpot.position;
 	}
 
-    void MoveRobo()
+    public void MoveRobo()
 	{
 		if(canJump){
 			yvel = 5f;

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 54429969200474414}
   - component: {fileID: 65922126682254360}
   - component: {fileID: 114554666304622174}
+  - component: {fileID: 82748961170061808}
   m_Layer: 0
   m_Name: EnemyShip3
   m_TagString: Untagged
@@ -112,6 +113,86 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.382155, y: 2.4888406, z: 1.6840848}
   m_Center: {x: 1.9988424, y: 0, z: 0}
+--- !u!82 &82748961170061808
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205631628652186}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 202712c09dfc09b4d866fe0ea32f09dd, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114554666304622174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,3 +218,4 @@ MonoBehaviour:
   - {fileID: 1813549663816986, guid: 21486c7f5edf540f288949c8a77bb80b, type: 2}
   - {fileID: 1392342164136174, guid: a696141913d8a4688b9e17618807a07b, type: 2}
   - {fileID: 1966253653719122, guid: ccfb583266b66446bad97a79b391fd95, type: 2}
+  audioSource: {fileID: 0}

@@ -44,10 +44,14 @@ public class RoboHandController : MonoBehaviour {
 	private bool charged;
     private bool punched;
 
+    private Robo player;
+
     // Use this for initialization
     void Start () {
 		charged = false;
         punched = false;
+
+        player = FindObjectOfType<Robo>();
 	}
 	
 	// Update is called once per frame
@@ -88,7 +92,8 @@ public class RoboHandController : MonoBehaviour {
 			if ((lhStartPos.position.x >= 1.2f) && (rhStartPos.position.x >= 1.2f)) {
 				print ("punching");
                 punched = true;
-				//Move player
+                //Move player
+                //player.MoveRobo();
 			}
 		}
 

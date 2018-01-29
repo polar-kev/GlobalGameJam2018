@@ -15,12 +15,11 @@ public class EnemyShip : MonoBehaviour {
 	public GameObject explosion;
 	public GameObject[] junk;
 
-	public AudioSource audioSource;
-
 	private float elapsedTime;
 	private  GameController gameController;
 	private Vector3 randomPos;
 	private float target_x = -30f;
+    private AudioSource audioSource;
 
 
 	void Start() {
@@ -28,6 +27,8 @@ public class EnemyShip : MonoBehaviour {
 		//Move enemies in a straight line
 		//gameObject.GetComponent<Rigidbody> ().velocity = -transform.right*speed;
 		gameController = GameObject.FindObjectOfType<GameController> ();
+
+        audioSource = gameObject.GetComponent<AudioSource>();
 
 		//generate random target
 		randomPos = new Vector3 (target_x, 
